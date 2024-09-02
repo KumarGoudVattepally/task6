@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <form></form>
+      <center>
+        <h1>Matrusri Engineering College</h1>
+        <h2>Application Form</h2>
+      </center>
+      <center><lebel>First Name:</lebel>
+      <input type="text" name="First name" id="First name" required />
+      <label>Last Name:</label>
+      <input type="text" name="Last Name" id="Last Name" required /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="Gender" value="male" /> Male
+      <input type="radio" name="Gender" value="female" /> Female<br /><br />
+      <label>Roll No. :</label>
+      <input
+        type="number"
+        name="Roll No"
+        id="Roll No"
+        required
+        placeholder="160820735309"
+        pattern="{0-10}"
+      /><br /><br />
+      <label>Year:</label>
+      <input
+        type="number"
+        name="year"
+        id="year"
+        required
+        pattern="{0-2025}"
+      /><br /><br />
+      <label>Phone Number:</label>
+      <input
+        type="tel"
+        name="Phone Number"
+        id="Phone Number"
+        required
+        pattern="{0-10}"
+      /><br /><br />
+      <label>Father Phone No:</label>
+      <input
+        type="tel"
+        name="Father Phone No"
+        id="Father Phone No"
+        required
+        pattern="{0-10}"
+      /><br /><br />
+      <label>Skills:</label>
+      <input type="radio" name="Skills" value="Html" required  checked/> HTML
+      <input type="radio" name="Skills" value="css" required />CSS
+      <input type="radio" name="Skills" value="js" required />JS<br /><br />
+      <label> Time:</label>
+      <input type="time" /><br /><br />
+      <label> Date:</label>
+      <input type="date" /> <br /><br>
+      <label > Skills :</label>
+      <input list ="techstack" name "stack" >
+      <datalist id="techstack">
+        <option value="frontend"> frontend</option>
+        <option value=" backend"> backend</option>
+        <option value="fullstack"> fullstack</option>
+      </datalist> </center> <br>
+      
+      <center><input type="submit" value="Apply" /></center>
+      
+    </form>
+  </body>
+</html>
